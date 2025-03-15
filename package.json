@@ -1,0 +1,19 @@
+{
+  "name": "sd-org-collab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeevangraham/SD-Org-Collab.git"
+  },
+  "author": "Luke Graham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeevangraham/SD-Org-Collab/issues"
+  },
+  "homepage": "https://github.com/lukeevangraham/SD-Org-Collab#readme",
+  "description": ""
+}
