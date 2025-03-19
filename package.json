@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "watch:sass": "sass public/assets/sass/main.scss public/assets/css/style.css -w",
     "devserver": "live-server",
+    "handlebars": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm-run-all --parallel handlebars watch:sass"
   },
   "repository": {
     "type": "git",
