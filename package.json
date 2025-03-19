@@ -5,7 +5,7 @@
   "scripts": {
     "watch:sass": "sass public/assets/sass/main.scss public/assets/css/style.css -w",
     "devserver": "live-server",
-    "dev": "npm-run-all --parallel handlebars watch:sass",
+    "dev": "npm-run-all --parallel start watch:sass",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "compile:sass": "sass public/assets/sass/main.scss public/assets/css/style.comp.css",
