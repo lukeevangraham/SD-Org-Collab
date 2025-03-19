@@ -1,0 +1,16 @@
+<section>
+  <img src="{{club.attributes.ClubImage.data.attributes.url}}" alt="" />
+  <h1>{{club.attributes.ClubName}}</h1>
+
+  <div>{{club.attributes.ContactFirstName}}</div>
+  <div>{{club.attributes.ContactLastName}}</div>
+  <div>{{club.attributes.ContactPhone}}</div>
+  <div>{{club.attributes.ContactEmail}}</div>
+  <a
+    href="{{club.attributes.Website}}"
+    target="_blank"
+  >{{club.attributes.Website}}</a>
+  <div>{{{club.attributes.Description}}}</div>
+
+  {{log club.attributes.ClubImage.data}}
+</section>

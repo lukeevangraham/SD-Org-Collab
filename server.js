@@ -1,4 +1,7 @@
 let express = require("express");
+let exphbs = require("express-handlebars");
+require("dotenv").config();
+// console.log(process.env);
 
 let PORT = process.env.PORT || 8080;
 let app = express();
@@ -10,8 +13,6 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-let exphbs = require("express-handlebars");
-
 app.engine(
   "handlebars",
   exphbs.engine({
@@ -20,7 +21,7 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-let routes = require("./routes/index.js");
+let routes = require("./routes/");
 
 app.use(routes);
 

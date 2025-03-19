@@ -1,6 +1,8 @@
 <h1>Welcome to the San Diego Org Collab</h1>
 
 {{#each clubs}}
-  <h2>{{this.attributes.ClubName}}</h2>
-  {{log this}}
+  <a href="/org/{{this.attributes.Slug}}">
+    <h2>{{this.attributes.ClubName}}</h2>
+  </a>
+  {{!-- {{log this}} --}}
 {{/each}}
