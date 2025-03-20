@@ -1,0 +1,22 @@
+.header {
+  background-color: $color-quaternary;
+  padding: 1rem 3rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+
+  nav {
+    flex: 1 0 auto;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
