@@ -90,6 +90,10 @@ p {
   }
 }
 
+.u-padding-y-medium {
+  padding: 8rem 0;
+}
+
 .header {
   background-color: #b5a8d5;
   padding: 1rem 3rem;

@@ -1,8 +1,14 @@
-<h1>Welcome to the San Diego Organ Collaborative</h1>
+<div class="u-padding-y-medium">
 
-{{#each clubs}}
-  <a href="/org/{{this.attributes.Slug}}">
-    <h2>{{this.attributes.ClubName}}</h2>
-  </a>
-  {{!-- {{log this}} --}}
-{{/each}}
+  <div class="row">
+
+    <h1>Welcome to the San Diego Organ Collaborative</h1>
+
+    {{#each clubs}}
+      <a href="/org/{{this.attributes.Slug}}">
+        <h2>{{this.attributes.ClubName}}</h2>
+      </a>
+      {{!-- {{log this}} --}}
+    {{/each}}
+  </div>
+</div>

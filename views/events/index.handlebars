@@ -1,0 +1,18 @@
+<section class="u-padding-y-medium">
+  <div class="row">
+
+    {{#each events}}
+      <div>
+        <h2>{{this.attributes.EventName}}</h2>
+        {{{this.attributes.Description}}}
+        <p>Date: {{this.attributes.StartDate}}</p>
+        <p>Location: {{this.attributes.LocationName}}</p>
+      </div>
+    {{/each}}
+
+    {{! Uncomment to log the events data }}
+    {{!-- {{log events}} --}}
+
+    {{log events}}
+  </div>
+</section>
