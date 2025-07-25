@@ -4,20 +4,19 @@
     {{#each events}}
       <div>
         <img
-          src="{{this.attributes.Image.data.attributes.url}}"
-          srcset="{{this.attributes.Image.data.attributes.url}} {{this.attributes.Image.data.attributes.width}}w
-          }}, {{getCloudinaryResize
+          srcset="{{this.attributes.Image.data.attributes.url}} {{this.attributes.Image.data.attributes.width}}w, {{getCloudinaryResize
             this.attributes.Image.data.attributes.url
             400
           }}, {{getCloudinaryResize
             this.attributes.Image.data.attributes.url
-            800
+            850
           }}, {{getCloudinaryResize
             this.attributes.Image.data.attributes.url
-            1200
+            1500
           }}"
+          sizes="(max-width: 900px) 100vw, 50vw"
+          src="{{this.attributes.Image.data.attributes.url}}"
           alt=""
-          sizes="(max-width: 600px) 100vw, (max-width: 900px) 100vw, (max-width: 1800px) 50vw, 1200px"
         />
         <h2>{{this.attributes.EventName}}</h2>
         {{{this.attributes.Description}}}
