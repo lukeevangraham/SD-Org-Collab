@@ -11,18 +11,20 @@
       <a href="/">
         <h2>San Diego Organ Collaborative</h2>
       </a>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/events">Events</a></li>
-        </ul>
-      </nav>
+      <div class="header__drawer-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="desktop-only">
+      {{> nav/nav-items }}
+      </div>
+      <div></div>
     </section>
 
     {{{body}}}
 
-    {{! <script src="/js/main.js"></script> }}
+    <script src="/assets/js/main.js"></script>
 
   </body>
 </html>

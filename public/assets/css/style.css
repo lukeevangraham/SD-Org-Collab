@@ -94,24 +94,74 @@ p {
   padding: 8rem 0;
 }
 
+.desktop-only {
+  width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 .header {
   background-color: #b5a8d5;
   padding: 1rem 3rem;
   display: flex;
-  gap: 1rem;
-  justify-content: space-evenly;
+  gap: 2rem;
+  justify-content: space-between;
   align-items: center;
 }
-.header nav {
-  flex: 1 0 auto;
+.header > :first-child {
+  flex-grow: 1;
 }
 .header nav ul {
   display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
+  justify-content: flex-end;
+  gap: 4rem;
 }
 .header nav ul li {
   list-style: none;
+}
+.header__drawer-toggle {
+  background-color: rgba(17, 17, 17, 0.5);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: none;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+.header__drawer-toggle div {
+  width: 50%;
+  height: 2px;
+  background-color: #eee;
+}
+@media only screen and (max-width: 56.25em) {
+  .header__drawer-toggle {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

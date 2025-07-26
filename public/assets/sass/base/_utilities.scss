@@ -11,3 +11,10 @@
 .u-padding-y-medium {
   padding: 8rem 0;
 }
+
+.desktop-only {
+  width: 100%;
+  @include respond(tab-port) {
+    display: none;
+  }
+}
