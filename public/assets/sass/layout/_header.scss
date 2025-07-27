@@ -4,7 +4,6 @@
   background-color: $color-quaternary;
   padding: 1rem 3rem;
   display: flex;
-  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 
@@ -34,8 +33,7 @@
     box-sizing: border-box;
     cursor: pointer;
     flex: 0 0 auto;
-    // flex-grow: 0;
-    // flex-shrink: 0;
+    align-self: flex-end;
 
     div {
       width: 50%;

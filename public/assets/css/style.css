@@ -124,7 +124,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-color: #b5a8d5;
   padding: 1rem 3rem;
   display: flex;
-  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -149,6 +148,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: border-box;
   cursor: pointer;
   flex: 0 0 auto;
+  align-self: flex-end;
 }
 .header__drawer-toggle div {
   width: 50%;
